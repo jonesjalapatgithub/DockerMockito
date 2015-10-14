@@ -4,9 +4,9 @@ MAINTAINER Jones Alapat <jonesjalapat@gmail.com>
 
 
 #installing java8
-RUN mkdir -p /opt/java/jdk1.8.0_45
-COPY jdk1.8.0_45 /opt/java/jdk1.8.0_45/
-RUN chmod -R 777 /opt/java/jdk1.8.0_45/
+#RUN mkdir -p /opt/java/jdk1.8.0_45
+#COPY jdk1.8.0_45 /opt/java/jdk1.8.0_45/
+#RUN chmod -R 777 /opt/java/jdk1.8.0_45/
 
 #installing maven 3.0.4
 RUN mkdir -p /opt/apache-maven-3.0.4
@@ -17,7 +17,7 @@ RUN chmod -R 777 /opt/apache-maven-3.0.4/
 COPY repository /root/.m2/repository/
 
 #setting env variables
-ENV JAVA_HOME /opt/java/jdk1.8.0_45
+#ENV JAVA_HOME /opt/java/jdk1.8.0_45
 ENV M2_HOME /opt/apache-maven-3.0.4
 ENV MAVEN_HOME /opt/apache-maven-3.0.4
 ENV PATH $PATH:$JAVA_HOME/bin:$M2_HOME/bin
