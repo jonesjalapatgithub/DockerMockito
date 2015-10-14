@@ -1,6 +1,6 @@
 #Dockerfile for creating environment for java CI process execution
-FROM ubuntu
-MAINTAINER Gaurang Rathod <gaurang@example.com>
+FROM ubuntu:v261040
+MAINTAINER Jones Alapat <jonesjalapat@gmail.com>
 
 
 #installing java8
